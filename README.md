@@ -18,7 +18,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* Based on studing the images we can determine whether or not the leaves has mildew with a 97% accuracy.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
