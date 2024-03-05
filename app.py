@@ -5,7 +5,7 @@ from app_pages.multipage import MultiPage
 from app_pages.page_summary import page_summary_body
 from app_pages.page_visualization import page_visualization_body
 from app_pages.page_MildewDetector import page_MildewDetector_body
-from app_pages.page_project_hypothesis import page_project_hypothesis_body
+from app_pages.page_hypothesis import page_project_hypothesis_body
 from app_pages.page_mlPerformance import page_ml_performance_metrics
 
 app = MultiPage(app_name="Powdery Mildew Detector")  # Create an instance of the app
