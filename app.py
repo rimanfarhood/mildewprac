@@ -15,3 +15,5 @@ app.add_page("Quick Project Summary", page_summary_body)
 app.add_page("Leaves Visualizer", page_visualization_body)
 app.add_page("Powdery Mildew Detection", page_MildewDetector_body)
 app.add_page("Project Hypothesis", page_project_hypothesis_body)
+
+app.run()
