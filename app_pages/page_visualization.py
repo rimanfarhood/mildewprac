@@ -44,8 +44,8 @@ def page_visualization_body():
                           nrows=8, ncols=3, figsize=(10,25))
         st.write('---')
 
-def image_montage(dir_path, label_display, nrows, ncols, figgsize=(15,10)):
-    sns.set_Style(white)
+def image_montage(dir_path, label_display, nrows, ncols, figsize=(15,10)):
+    sns.set_style('white')
     labels = os.listdir(dir_path)
 
     if label_display in labels:
@@ -66,7 +66,7 @@ def image_montage(dir_path, label_display, nrows, ncols, figgsize=(15,10)):
 
         fig, axes = plt.subplots(nrows=nrows,ncols=ncols, figsize=figsize)
         for x in range(0,nrows*ncols):
-            img = imread(dir_path + '/' + label_to_display + '/' + img_idx[x])
+            img = imread(dir_path + '/' + label_display + '/' + img_idx[x])
             img_shape = img.shape
             axes[plot_idx[x][0], plot_idx[x][1]].imshow(img)
             axes[plot_idx[x][0], plot_idx[x][1]].set_title(f"Width {img_shape[1]}px x Height {img_shape[0]}px")
